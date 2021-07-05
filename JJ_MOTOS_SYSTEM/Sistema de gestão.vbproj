@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85663F45-6C46-4349-A587-A58009259A3A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>System_IVZ.My.MyApplication</StartupObject>
+    <RootNamespace>System_IVZ</RootNamespace>
+    <AssemblyName>System IVZ</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>System IVZ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>System IVZ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\LOGO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Adc_Produto.Designer.vb">
+      <DependentUpon>Adc_Produto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Adc_Produto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cad_Cliente.Designer.vb">
+      <DependentUpon>Cad_Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cad_Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cad_Moto.Designer.vb">
+      <DependentUpon>Cad_Moto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cad_Moto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cad_Produto.Designer.vb">
+      <DependentUpon>Cad_Produto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cad_Produto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Con_Cliente.Designer.vb">
+      <DependentUpon>Con_Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Con_Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Con_Moto.Designer.vb">
+      <DependentUpon>Con_Moto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Con_Moto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Con_Produto.Designer.vb">
+      <DependentUpon>Con_Produto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Con_Produto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database\DatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\DataGridPrinter.vb" />
+    <Compile Include="Forms\Edit_cliente.Designer.vb">
+      <DependentUpon>Edit_cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Edit_cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Edit_Produto.Designer.vb">
+      <DependentUpon>Edit_Produto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Edit_Produto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\menu.Designer.vb">
+      <DependentUpon>menu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Modulo.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\Orçamento.Designer.vb">
+      <DependentUpon>Orçamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Orçamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Adc_Produto.resx">
+      <DependentUpon>Adc_Produto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cad_Cliente.resx">
+      <DependentUpon>Cad_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cad_Moto.resx">
+      <DependentUpon>Cad_Moto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cad_Produto.resx">
+      <DependentUpon>Cad_Produto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Con_Cliente.resx">
+      <DependentUpon>Con_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Con_Moto.resx">
+      <DependentUpon>Con_Moto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Con_Produto.resx">
+      <DependentUpon>Con_Produto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Edit_cliente.resx">
+      <DependentUpon>Edit_cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Edit_Produto.resx">
+      <DependentUpon>Edit_Produto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\menu.resx">
+      <DependentUpon>menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Orçamento.resx">
+      <DependentUpon>Orçamento.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Database\DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database\DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\Database.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\LOGO.ico" />
+    <None Include="Resources\JJ MOTOS.png" />
+    <None Include="Resources\product-xxl.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
